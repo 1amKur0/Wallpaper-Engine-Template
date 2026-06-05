@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05070a" />
+    <title>Web Wallpaper Template</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wallpaper" id="wallpaper" aria-label="Web wallpaper template">
+      <div class="placeholder" id="placeholder">
+        <div class="placeholder-text">Add assets/images/wallpaper.jpg</div>
+      </div>
+
+      <img
+        class="layer layer--backdrop"
+        id="backdrop-image"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+      />
+      <img class="layer layer--main" id="main-image" alt="" draggable="false" />
+
+      <div class="shadow shadow--top" aria-hidden="true"></div>
+      <div class="shadow shadow--bottom" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <section class="hud" id="hud" aria-hidden="true">
+        <time class="clock" id="clock">00:00</time>
+
+        <div class="media-panel" id="media-panel">
+          <div class="media-copy">
+            <div class="marquee media-artist" id="media-artist-marquee">
+              <div class="marquee-track">
+                <span class="marquee-text" id="media-artist">MEDIA ARTIST</span>
+                <span class="marquee-text" aria-hidden="true">MEDIA ARTIST</span>
+              </div>
+            </div>
+            <div class="marquee media-title" id="media-title-marquee">
+              <div class="marquee-track">
+                <span class="marquee-text" id="media-title">Media Title</span>
+                <span class="marquee-text" aria-hidden="true">Media Title</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-cover" id="media-cover" aria-hidden="true"></div>
+
+          <div class="media-progress" id="media-progress">
+            <div class="progress-time">
+              <span id="progress-current">00:00</span>
+              <span>/</span>
+              <span id="progress-duration">00:00</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
